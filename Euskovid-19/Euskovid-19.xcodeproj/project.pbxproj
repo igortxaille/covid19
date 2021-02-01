@@ -13,9 +13,11 @@
 		C22CA37425C4A1B900D8A87A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22CA37325C4A1B900D8A87A /* Assets.xcassets */; };
 		C22CA37725C4A1B900D8A87A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22CA37625C4A1B900D8A87A /* Preview Assets.xcassets */; };
 		C22CA37A25C4A1B900D8A87A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22CA37825C4A1B900D8A87A /* LaunchScreen.storyboard */; };
+		F8474C7DF904ECDDFF40F3B3 /* Pods_Euskovid_19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22ADA86FB1E7A9644F30AD9B /* Pods_Euskovid_19.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22ADA86FB1E7A9644F30AD9B /* Pods_Euskovid_19.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euskovid_19.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C22CA36A25C4A1B800D8A87A /* Euskovid-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Euskovid-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C22CA36D25C4A1B800D8A87A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C22CA36F25C4A1B800D8A87A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		C22CA37625C4A1B900D8A87A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C22CA37925C4A1B900D8A87A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C22CA37B25C4A1B900D8A87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C80E3C44F7F8ED7E683CF447 /* Pods-Euskovid-19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euskovid-19.release.xcconfig"; path = "Target Support Files/Pods-Euskovid-19/Pods-Euskovid-19.release.xcconfig"; sourceTree = "<group>"; };
+		F65F9B9846F2ED2268B42F6D /* Pods-Euskovid-19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euskovid-19.debug.xcconfig"; path = "Target Support Files/Pods-Euskovid-19/Pods-Euskovid-19.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8474C7DF904ECDDFF40F3B3 /* Pods_Euskovid_19.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		844C60C4C26DB938F7EA989E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F65F9B9846F2ED2268B42F6D /* Pods-Euskovid-19.debug.xcconfig */,
+				C80E3C44F7F8ED7E683CF447 /* Pods-Euskovid-19.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A1CBB07E63BE88385412A937 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22ADA86FB1E7A9644F30AD9B /* Pods_Euskovid_19.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C22CA36125C4A1B800D8A87A = {
 			isa = PBXGroup;
 			children = (
 				C22CA36C25C4A1B800D8A87A /* Euskovid-19 */,
 				C22CA36B25C4A1B800D8A87A /* Products */,
+				844C60C4C26DB938F7EA989E /* Pods */,
+				A1CBB07E63BE88385412A937 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C22CA37E25C4A1B900D8A87A /* Build configuration list for PBXNativeTarget "Euskovid-19" */;
 			buildPhases = (
+				B6CD32C0DA5825FB13B70BAD /* [CP] Check Pods Manifest.lock */,
 				C22CA36625C4A1B800D8A87A /* Sources */,
 				C22CA36725C4A1B800D8A87A /* Frameworks */,
 				C22CA36825C4A1B800D8A87A /* Resources */,
+				B998E03869B24920A55EC848 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B6CD32C0DA5825FB13B70BAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Euskovid-19-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B998E03869B24920A55EC848 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Euskovid-19/Pods-Euskovid-19-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Euskovid-19/Pods-Euskovid-19-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Euskovid-19/Pods-Euskovid-19-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C22CA36625C4A1B800D8A87A /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		C22CA37F25C4A1B900D8A87A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F65F9B9846F2ED2268B42F6D /* Pods-Euskovid-19.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +373,7 @@
 		};
 		C22CA38025C4A1B900D8A87A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C80E3C44F7F8ED7E683CF447 /* Pods-Euskovid-19.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
